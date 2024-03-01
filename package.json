@@ -1,0 +1,17 @@
+{
+  "name": "group-project-2",
+  "version": "1.0.0",
+  "description": "Repo for Module 15 Group Project 2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "sequelize": "^6.37.1"
+  }
+}
