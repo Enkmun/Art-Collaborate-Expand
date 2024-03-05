@@ -22,6 +22,14 @@
       <h2>Enjoy the A.C.E!</h2>
     </aside>
     <div class="gallery">
+        {{#each products}}
+            <div class="product">
+                <h2>{{title}}</h2>
+                <p>{{description}}</p>
+                <p>Price: ${{price}}</p>
+                <img src="{{imageUrl}}" alt="Product Image">
+            </div>
+            {{/each}}
       {{{body}}}
     </div>
   </main>
