@@ -10,6 +10,15 @@
   </header>
   <nav>
     <a href="/">Home</a>
+    <a href="/products">Create post</a>
+    <!---shopping card icon and badge--->
+
+    <li class="nav-item">
+            <a class="nav-link" href="/cart">
+                <i class="fa fa-shopping-cart"></i> <!-- Font Awesome icon for shopping cart -->
+                <span class="badge">{{ cartCount }}</span> <!-- Cart count -->
+            </a>
+        </li>
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
@@ -36,5 +45,6 @@
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
+  <script src="/js/shopping-cart.js"></script>
 </body>
 </html>
