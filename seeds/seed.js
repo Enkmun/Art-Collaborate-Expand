@@ -4,21 +4,29 @@ const userData = require('./userData');
 const productData = require('./productData');
 
 const seedAll = async () => {
-    await sequelize.sync({ force: true });
-    const users = await User.bulkCreate(userData);
-    const products = await Product.bulkCreate(productData);
-    
-   for (let 1 = 0; 1 < 7; 1++); {
-    const {RandomUser} = userData[Math.floor(math.random()*userData.length)]};
-    for (let 1=0; 1 < 8; 1++); {
-    const {RandomProduct} = productData[Math.floor(math.random()*productData.length)]};
+    try {
+        await sequelize.sync({ force: true });
+        
+        // Create users and products
+        const users = await User.bulkCreate(userData);
+        const products = await Product.bulkCreate(productData);
+        
+        // Create collaborations
+        for (let i = 0; i < 7; i++) {
+            const RandomUser = users[Math.floor(Math.random() * users.length)];
+            const RandomProduct = products[Math.floor(Math.random() * products.length)];
+            
+            await Collaborate.create({
+                UserId: RandomUser.id, 
+                ProductId: RandomProduct.id
+            });
+        }
 
-    await Collaborate.create({
-        User: RandomUser,
-        Product: RandomProduct}).catch((err) => {console.log(err);
-        })
-
-    process.exit(0);
+        process.exit(0);
+    } catch (error) {
+        console.error('Error seeding data:', error);
+        process.exit(1);
+    }
 };
 
 seedAll();
