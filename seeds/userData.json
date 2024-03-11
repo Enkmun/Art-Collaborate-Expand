@@ -2,43 +2,38 @@
     {
         "name": "Jack Black",
         "email": "Jack_Black95@yahoo.com",
-        "password": "BBK!ng5767",
-        "color": ""
+        "password": "BBK!ng5767"
+        
     },
     {
         "name": "Anna Stewart",
         "email": "AnnaStewart938@hotmail.com",
-        "password": "Sol@rtree50",
-        "color": ""
+        "password": "Sol@rtree50"
+        
     },
     {
         "name": "Max Jenkins",
         "email": "M.J.1985@hotmail.com",
-        "password": "HotSh0t5006",
-        "color": "" 
+        "password": "HotSh0t5006"
     },
     {
         "name": "Amanda Sanders",
         "email": "Amanda.S@gmail.com",
-        "password": "YoYom4m400",
-        "color": "" 
+        "password": "YoYom4m400"
     },
     {
         "name": "Lori Stevens",
         "email": "LoriSavesTheDay@gmail.com",
-        "password": "Prince$$Peaches1",
-        "color": ""  
+        "password": "Prince$$Peaches1"
     },
     {
         "name": "Sandra Malcomb",
         "email": "SandieMal94@yahoo.com",
-        "password": "M@dmax1984",
-        "color": ""
+        "password": "M@dmax1984"
     },
     {
         "name": "Thomas Preston",
         "email": "tompres1001@gmail.com",
-        "password": "SaveDaFrogz7",
-        "color": ""
+        "password": "SaveDaFrogz7"
     }
 ]
