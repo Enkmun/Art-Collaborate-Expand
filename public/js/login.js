@@ -42,7 +42,7 @@ const signupFormHandler = async (event) => {
   }
 };
 
-// Helper function to log in after successful signup
+// Added helper function to log in after successful signup
 const loginAfterSignup = async (email, password) => {
   const response = await fetch('/api/users/login', {
     method: 'POST',
