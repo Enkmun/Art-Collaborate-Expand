@@ -1,28 +1,17 @@
-// import dependencies
 const User = require('./User');
-const Product = require('./product');
-const Collaborate = require('./Collaborate');
+const Portfolio = require('./Portfolio');
+const Artwork = require('./Artwork');
 
-// associations
-User.belongsToMany(Product, {
-  through: {
-    model: Collaborate,
-    unique: false,
-  },
-  as: 'collaborations'
+Portfolio.hasMany(Artwork, {
+  foreignKey: 'portfolio_id',
 });
 
-Product.belongsToMany(User, {
-  through: {
-    model: Collaborate,
-    unique: false,
-  },
-  as: 'collaborators'
+Artwork.belongsTo(Portfolio, {
+  foreignKey: 'portfolio_id',
 });
 
-// export User
 module.exports = { 
-    User,
-    Product,
-    Collaborate 
+  User, 
+  Portfolio, 
+  Artwork 
 };

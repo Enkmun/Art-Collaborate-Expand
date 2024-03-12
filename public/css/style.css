@@ -1,29 +1,3 @@
-/* header h1 {
-  text-align: center;
-  background-color: black;
-  color: white;
-  padding: 40px 0;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  background-color: blue;
-  padding: 40px 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-}
-
-aside {
-  text-align: left;
-  color: black;
-  flex: 0 1 0%;
-  padding: 80px;
-} */
-
 :root {
     --primary: #c97e88;
     --secondary: #5a343b;
@@ -92,7 +66,7 @@ aside {
     background-color: var(--dark);
   }
   
-  .gallery {
+  .portfolio {
     flex: 4;
     background-color: #c97e88;
     padding: 50px;
@@ -170,7 +144,7 @@ aside {
     font-weight: bold;
   }
   
-  .gallery-name {
+  .portfolio-name {
     text-transform: uppercase;
     letter-spacing: 3px;
     text-shadow: 2px 2px 5px var(--secondary);
