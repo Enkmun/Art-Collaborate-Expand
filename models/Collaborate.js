@@ -1,26 +1,27 @@
 // import dependencies
-const { Model, Datatypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const { Col } = require('sequelize/types/utils');
 
 class Collaborate extends Model {}
 
 Collaborate.init(
   {
     id: {
-      type: Datatypes.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
     user_id: {
-      type: Datatypes.INTEGER,
+      type: DataTypes.INTEGER,
       references: {
         model: 'user',
         key: 'id',
       },
     },
     product_id: {
-      type: Datatypes.INTEGER,
+      type: DataTypes.INTEGER,
       references: {
         model: 'product',
         key: 'id',
@@ -34,4 +35,6 @@ Collaborate.init(
     underscored: true,
     modelName: 'collaborate',
   }
-)
+);
+
+module.exports = Collaborate;
