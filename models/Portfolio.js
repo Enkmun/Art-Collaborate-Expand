@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Product extends Model {}
+class Portfolio extends Model {}
 
-Product.init(
+Portfolio.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,19 +11,7 @@ Product.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    description: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-    },
-    price: {
-      type: DataTypes.DECIMAL(10, 2),
-      allowNull: false,
-    },
-    imageUrl: {
+    portfolio_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -33,9 +21,8 @@ Product.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'product'
+    modelName: 'portfolio',
   }
 );
 
-
-module.exports = Product;
+module.exports = Portfolio;

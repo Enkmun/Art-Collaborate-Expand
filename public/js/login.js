@@ -20,7 +20,6 @@ const loginFormHandler = async (event) => {
   }
 };
 
-// Signup form handler
 const signupFormHandler = async (event) => {
   event.preventDefault();
 
@@ -28,7 +27,7 @@ const signupFormHandler = async (event) => {
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
 
-  if (username && email && password) {
+  if (username && password) {
     const response = await fetch('/api/users', {
       method: 'POST',
       body: JSON.stringify({ username, email, password }),
@@ -36,8 +35,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      // Automatically log in after signup
-      await loginAfterSignup(email, password);
+      document.location.replace('/');
     } else {
       alert('Failed to sign up.');
     }

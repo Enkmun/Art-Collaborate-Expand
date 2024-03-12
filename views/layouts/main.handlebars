@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.C.E</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
+
 <body>
-      <h1>Welcome to A.C.E</h1>
+  <header>
+    <h1>Art.Collaborate.Expand</h1>
   </header>
   <nav>
     <a href="/">Home</a>
-    <a href="/products">Create post</a>
-    
-    <!---shopping card icon and badge--->
-
-    <li class="nav-item">
-            <a class="nav-link" href="/cart">
-                <i class="fa fa-shopping-cart"></i> <!-- Font Awesome icon for shopping cart -->
-                <span class="badge">{{ cartCount }}</span> <!-- Cart count -->
-            </a>
-        </li>
     {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
+    <button id="logout">Logout</button>
     {{else}}
     <a href="/login">Login</a>
     {{/if}}
-
   </nav>
   <main>
     <aside>
-      <h2>Enjoy the A.C.E!</h2>
+      <h2>Enjoy A.C.E!</h2>
     </aside>
-    <div class="gallery">
-        {{#each products}}
-            <div class="product">
-                <h2>{{title}}</h2>
-                <p>{{description}}</p>
-                <p>Price: ${{price}}</p>
-                <img src="{{imageUrl}}" alt="Product Image">
-            </div>
-            {{/each}}
+    <div class="portfolio">
       {{{body}}}
     </div>
   </main>
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
-  <script src="/js/shopping-cart.js"></script>
 </body>
+
 </html>
