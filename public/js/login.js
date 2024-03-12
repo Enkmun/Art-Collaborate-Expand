@@ -1,3 +1,4 @@
+// Login form handler
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
@@ -38,6 +39,21 @@ const signupFormHandler = async (event) => {
     } else {
       alert('Failed to sign up.');
     }
+  }
+};
+
+// Added helper function to log in after successful signup
+const loginAfterSignup = async (email, password) => {
+  const response = await fetch('/api/users/login', {
+    method: 'POST',
+    body: JSON.stringify({ email, password }),
+    headers: { 'Content-Type': 'application/json' },
+  });
+
+  if (response.ok) {
+    document.location.replace('/');
+  } else {
+    alert('Failed to log in after signup.');
   }
 };
 
