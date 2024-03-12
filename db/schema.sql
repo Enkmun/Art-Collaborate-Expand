@@ -1,3 +1,3 @@
-drop database if exists ACE_db;
-create database ACE_db;
+DROP DATABASE IF EXISTS ACE_db;
+CREATE DATABASE ACE_db;
 
