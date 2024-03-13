@@ -6,23 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A.C.E</title>
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+   <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
-  <header>
-    <h1>Art.Collaborate.Expand</h1>
+  <header class="hero">
+    <h1><span class="fr">Art</span>.<span class="sd">Collaborate</span>.<span>Expand</span></h1>
   </header>
   <nav>
-    <a href="/">Home</a>
+    <a href="/"><i class='bx bxs-home'></i> Home</a>
     {{#if loggedIn}}
     <button id="logout">Logout</button>
     {{else}}
-    <a href="/login">Login</a>
+    <a href="/login"><i class='bx bx-log-in' ></i> Login</a>
     {{/if}}
   </nav>
   <main>
     <aside>
-      <h2>Enjoy A.C.E!</h2>
+      <h2>Enjoy <span class="fr">A</span>.<span class="sd">C</span>.<span>E</span>!</h2>
     </aside>
     <div class="portfolio">
       {{{body}}}
