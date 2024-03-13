@@ -23,7 +23,7 @@ h1 {
   font-size: 80%;
 }
 a {
-  color: var(--dark);
+  color: whitesmoke;
   text-decoration: none;
 }
 .fr {
@@ -56,13 +56,14 @@ main {
 aside {
   flex: 0;
   background-color:#5a343b;
-  padding: 60px;
+  padding: 30px;
   text-align: left;
   color: var(--light);
   
 }
 h2 {
   text-align: center;
+  text-size-adjust: 80px;
 }
 nav {
   display: flex;
@@ -70,14 +71,14 @@ nav {
 }
 
 nav a {
-  color: var(--light);
+  color: whitesmoke;
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
 }
 
 nav a:hover {
-  color: var(--secondary);
+  color: whitesmoke;
   background-color: var(--dark);
 }
 

@@ -16,7 +16,9 @@
     <h1><span class="fr">Art</span>.<span class="sd">Collaborate</span>.<span>Expand</span></h1>
   </header>
   <nav>
-    <a href="/"><i class='bx bxs-home'></i> Home</a>
+    <a href="/"><i class='bx bx-home-alt'></i>Home</a>
+    <a href="/portfolio">Create Portfolio</a>
+    <a href="/artwork">Create Artwork</a>
     {{#if loggedIn}}
     <button id="logout">Logout</button>
     {{else}}
@@ -25,7 +27,7 @@
   </nav>
   <main>
     <aside>
-      <h2>Enjoy <span class="fr">A</span>.<span class="sd">C</span>.<span>E</span>!</h2>
+      <h2> <span class="fr">A</span><br><span class="sd"><br>C<br></span><br><span>E</span></h2>
     </aside>
     <div class="portfolio">
       {{{body}}}
