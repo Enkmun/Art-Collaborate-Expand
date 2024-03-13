@@ -1,5 +1,5 @@
 // import dependencies
-const sequelize = require('sequelize');
+const Sequelize = require('sequelize');
 require('dotenv').config();
 
 if (process.env.JAWSDB_URL) {
