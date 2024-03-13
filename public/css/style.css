@@ -21,6 +21,7 @@ body {
 }
 h1 {
   font-size: 80%;
+ 
 }
 a {
   color: whitesmoke;
@@ -37,7 +38,7 @@ span {
   color: rgb(57, 57, 233);
 }
 a:visited {
-  color: inherit;
+  color:whitesmoke;
 }
 
 header {
