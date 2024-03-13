@@ -1,11 +1,11 @@
 // import dependencies
-const Sequelize = require('sequelize');
+const sequelize = require('sequelize');
 require('dotenv').config();
 
 if (process.env.JAWSDB_URL) {
-  const Sequelize = new Sequelize(process.env.JAWSDB_URL);
+  sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
-  Sequelize = new Sequelize(
+  sequelize = new Sequelize(
     process.env.DB_NAME,
     process.env.DB_USER,
     process.env.DB_PASSWORD,
@@ -17,4 +17,4 @@ if (process.env.JAWSDB_URL) {
   );
 }
 
-module.exports = Sequelize;
+module.exports = sequelize;
