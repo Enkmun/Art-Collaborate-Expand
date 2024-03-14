@@ -2,8 +2,12 @@
 Group Project 2 
 Art Gallery - Full-Stack Application
 
+![License Badge](https://img.shields.io/badge/license-MIT-blue)
+
 ## Description
 The Art Gallery application is a full-stack web application designed to showcase and sell artwork online. Users can browse through a collection of artworks, add them to their cart, and make purchases securely. The application is built with Node.js, Express.js, Handlebars.js, MySQL, Sequelize ORM, and other technologies to create a seamless user experience.
+
+Deployed App Link - https://ace-art-collaborate-expand-f96dd9660fda.herokuapp.com/
 
 ## Technologies Used
 Node.js
@@ -11,7 +15,8 @@ Express.js
 Handlebars.js
 MySQL
 Sequelize ORM
-Passport.js (for authentication)
+JAWSDB
+Bcrypt
 Bootstrap (for UI styling)
 Heroku (for deployment)
 ## Features
@@ -55,14 +60,14 @@ To run the application locally, follow these steps:
 
 ## Screenshots
 
+![Homepage](<Screenshot 2024-03-13 at 8.06.46 PM.png>)
 
+![Signup](<Screenshot 2024-03-13 at 8.07.03 PM.png>)
+
+![Login](<Screenshot 2024-03-13 at 8.07.20 PM.png>)
 
 ## Credits
 This project was developed by Anna Munkhchuluun, Josh Mayfield and Kimberly White as part of the Full-Stack Web Development Bootcamp.
 
 ## License
 This project is licensed under the MIT License.
-
-
-
-
