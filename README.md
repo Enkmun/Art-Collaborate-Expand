@@ -15,7 +15,8 @@ Express.js
 Handlebars.js
 MySQL
 Sequelize ORM
-Passport.js (for authentication)
+JAWSDB
+Bcrypt
 Bootstrap (for UI styling)
 Heroku (for deployment)
 ## Features
